@@ -64,6 +64,36 @@ export const seedFoods = async (req, res) => {
         spiceLevel: 4,
         image: "http://localhost:5000/images/sattu.png"
       },
+      {
+        name: "Thekua",
+        category: "veg",
+        description: "A healthy and flavorful Indian stuffed flatbread.",
+        price: 80,
+        veg: true,
+        rating: 4.7,
+        spiceLevel: 0,
+        image: "http://localhost:5000/images/thekua.png"
+      },
+      {
+        name: "Gugni",
+        category: "veg",
+        description: "A healthy and flavorful Indian stuffed flatbread.",
+        price: 99,
+        veg: true,
+        rating: 4.7,
+        spiceLevel: 4,
+        image: "http://localhost:5000/images/ghugni.png"
+      },
+      {
+        name: "Kadhi Bari",
+        category: "veg",
+        description: "A healthy and flavorful Indian stuffed flatbread.",
+        price: 120,
+        veg: true,
+        rating: 4.7,
+        spiceLevel: 4.8,
+        image: "http://localhost:5000/images/bari.png"
+      },
     ];
     await Food.deleteMany({});
     const created = await Food.insertMany(sample);
