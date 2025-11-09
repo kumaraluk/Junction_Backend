@@ -94,6 +94,16 @@ export const seedFoods = async (req, res) => {
         spiceLevel: 4.8,
         image: "http://localhost:5000/images/bari.png"
       },
+       {
+        name: "Chicken Handi",
+        category: "Non-veg",
+        description: "Slow-cooked chicken in earthen pot with rustic spices.",
+        price: 120,
+        veg: false,
+        rating: 4.7,
+        spiceLevel: 4.8,
+        image: "http://localhost:5000/images/Chicken-Handi.jpg"
+      },
     ];
     await Food.deleteMany({});
     const created = await Food.insertMany(sample);
